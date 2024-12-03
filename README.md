@@ -12,8 +12,7 @@ Depth estimation from single RGB images is a challenging computer vision task wi
 To set up the project environment, follow these steps:
 Clone the repository:
 text
-git clone https://github.com/yourusername/compressed-depth-estimation.git
-cd compressed-depth-estimation
+git clone https://github.com/huntrezzjanos/HuntrezzRealTimeDepthModel.git
 
 Install the required dependencies:
 text
@@ -41,6 +40,7 @@ The HRWSIDataset class in the code handles the loading and preprocessing of this
 # Model Architecture
 Teacher Model
 We use the DPT (Dense Prediction Transformer) model pre-trained on depth estimation tasks as our teacher model. This model is loaded from the Hugging Face model hub.
+
 Student Model
 The student model (CompressedStudentModel) is a custom-designed CNN with an encoder-decoder architecture:
 Encoder: Consists of convolutional layers and max pooling operations to extract hierarchical features.
